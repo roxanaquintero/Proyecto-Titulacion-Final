@@ -23,6 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.tareas, name='inicio'),
     path('dashboard/', views.dashboard, name='dashboard'),
+    path('tareas/', views.deber, name='tareas'),
+    path('recursos/', views.recursos, name='recursos'),
     
    
 ]

@@ -7,6 +7,10 @@ def tareas(request):
 
 def dashboard(request):
     return render(request, 'dashboard.html')   
+def deber(request):
+    return render(request, 'tareas.html') 
+def recursos(request):
+    return render(request, 'recursos.html') 
 
 
 
