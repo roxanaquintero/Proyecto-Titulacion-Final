@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pagina Principal</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="viewport">
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <header>
+      <a href="#">Maestro</a>
+    </header>
+    <ul class="nav">
+      <li>
+        <a href="{% url 'inicio' %}">
+          <i class="zmdi zmdi-home"></i> Inicio
+        </a>
+      </li>
+
+      <li>
+        <a href="{% url 'dashboard' %}">
+          <i class="zmdi zmdi-view-dashboard"></i> Dashboard
+        </a>
+      </li>
+
+      <li>
+        <a href="{% url 'dashboard' %}">
+          <i class="zmdi zmdi-link"></i> Tareas
+        </a>
+      </li>
+
+      <li>
+        <a href="{% url 'dashboard' %}">
+          <i class="zmdi zmdi-widgets"></i> Recursos
+        </a>
+      </li>
+       
+    </ul>
+  </div>
+  <!-- Content -->
+  <div id="content">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <h1> </h1>
+      <p>
+     
+      </p>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
