@@ -26,7 +26,6 @@ SECRET_KEY = 'django-insecure-432j696e3@fpvt=um+0v3s!t3!_6!yvfli7$m6!$^+0ge#%is)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 ALLOWED_HOSTS = []
 
 
@@ -126,6 +125,8 @@ STATIC_URL = 'static/'
 
 STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_DIRS = ['Tarea/static']
+
+LOGIN_URL = '/signin'
 
 
 

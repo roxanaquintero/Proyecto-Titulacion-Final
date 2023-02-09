@@ -20,11 +20,24 @@ from tareas import views
 
 
 urlpatterns = [
+
+    path('', views.signin, name='signin'),
+    path('home', views.home, name='home'),
     path('admin/', admin.site.urls),
-    path('', views.tareas, name='inicio'),
+    path('signup/', views.signup, name='signup'),
+    path('tasks/', views.tasks, name='tasks'),
+    path('tasks_completed/', views.tasks_completed, name='tasks_completed'),
+    path('logout/', views.signout, name='logout'),
+    path('create_task/', views.create_task, name='create_task'),
+    path('tasks/<int:task_id>', views.task_detail, name='task_detail'),
+    path('taks/<int:task_id>/complete', views.complete_task, name='complete_task'),
+    path('tasks/<int:task_id>/delete', views.delete_task, name='delete_task'),
     path('dashboard/', views.dashboard, name='dashboard'),
     path('tareas/', views.deber, name='tareas'),
-    path('recursos/', views.recursos, name='recursos'),
+    path('asignaturas/', views.asignaturas, name='asignaturas'),
+    path('cursos/', views.cursos, name='cursos'),
+    path('maestros/', views.maestros, name='maestros'),
+
     
    
 ]
